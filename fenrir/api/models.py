@@ -11,11 +11,11 @@ class product(models.Model):
     def __str__(self):
         return self.name
     
-class productMove(models.Model):
-    product = models.ForeignKey(product, on_delete=models.RESTRICT)
+class backet(models.Model):
     user = models.ForeignKey(User, on_delete=models.RESTRICT)
+    product = models.ForeignKey(product, on_delete=models.RESTRICT)
     quantity = models.IntegerField()
     date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return "Move by " + str(self.user) + " on " + str(self.date)
+        return "Backet of " + str(self.user) + " by " + str(self.date)

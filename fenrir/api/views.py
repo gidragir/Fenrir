@@ -25,9 +25,9 @@ class productCreate(generics.CreateAPIView):
             'data': response.data
         })
 
-class productMoveCreate(generics.CreateAPIView):
-  queryset = productMove.objects.all()
-  serializer_class = productMoveSerializer
+class backetCreate(generics.CreateAPIView):
+  queryset = backet.objects.all()
+  serializer_class = backetSerializer
     
   def create(self, request):
     response = super().create(request)  

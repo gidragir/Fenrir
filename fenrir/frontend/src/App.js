@@ -2,8 +2,11 @@
 import React from 'react';
 import Header from "./components/header";
 import Footer from "./components/footer";
-import Main from "./components/main";
+import Catalog from "./components/catalog";
+import About from "./components/about";
 
+import { Routes, Route} from 'react-router-dom';
+const constants = require("./static/constants");
 
 class App extends React.Component {
 
@@ -11,7 +14,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <Main />    
+        <Routes>
+          <Route path={constants.urls['home']} element={<Catalog />} /> 
+          <Route path={ constants.urls['about'] } element={<About />} /> 
+        </Routes>
         <Footer />
       </div>
     );

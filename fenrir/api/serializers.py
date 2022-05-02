@@ -14,9 +14,9 @@ class productsListSerializer(serializers.ModelSerializer):
     model = product
     fields = ['id','name','description','price','picture']
     
-class productMoveSerializer(serializers.ModelSerializer):
+class backetSerializer(serializers.ModelSerializer):
   date = serializers.ReadOnlyField()
   
   class Meta:
-    model = productMove
+    model = backet
     fields = ['id', 'product', 'user', 'quantity', 'date']
