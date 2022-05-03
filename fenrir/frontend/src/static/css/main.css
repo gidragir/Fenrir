@@ -16,8 +16,8 @@
 .product {
   background-color: aquamarine;
   border: 1px solid;
-  margin: 3%;
-  padding: 1%;
+  margin: 2em;
+  padding: 1em;
   width: 15%;
   border-radius: 15px;
   -webkit-transition: all .5s ease;
@@ -53,5 +53,24 @@
   max-width: 155px;
   min-width: 120px;
   min-height: auto;
+  border-radius: 10px;
+}
+
+header {
+  position: relative;
+}
+
+header .backet {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  width: 150px;
+  background: #a1f11a;
+}
+
+.btn-info:focus, .btn-outline-success:focus,
+.btn-outline-success.active:focus {
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }
 /*# sourceMappingURL=main.css.map */

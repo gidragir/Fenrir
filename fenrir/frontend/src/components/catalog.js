@@ -10,6 +10,10 @@ export class catalog extends Component {
       <Products /> 
     )
   }
+
+  addToBacket(product) {
+
+  }
 }
 
 export default catalog
