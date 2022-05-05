@@ -1,23 +1,15 @@
 /*eslint-disable */
-import React, { useEffect, useState } from 'react';
-import Functions from '../functions';
+import React from 'react';
 import Product from './product';
 
-export default function products() {
-
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    Functions.sendReq('productsList/').then((res) => {
-      setProducts(res.data);
-    });
-  }, []);
-
+const products = ({currentProducts}) => {
   return (
     <div className="productContainer">
-      {products.map((product) => (
+      {currentProducts.map((product) => (
         <Product product={product} key={product.id} />
       ))}
     </div >
-  );
+  )
 }
+
+export default products

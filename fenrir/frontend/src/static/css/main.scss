@@ -7,8 +7,8 @@
 
 .product {
   background-color: aquamarine;
-  border: 1px solid;
-  margin: 2em;
+  border: .1em solid;
+  margin: 3em;
   padding: 1em;
   width: 15%;
   border-radius: 15px;
@@ -52,6 +52,6 @@ header {
 }
 
 .btn-info:focus, .btn-outline-success:focus, 
-.btn-outline-success.active:focus {
+.btn-outline-success.active:focus, .page-link:focus {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }
