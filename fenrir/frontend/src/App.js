@@ -1,7 +1,6 @@
 /*eslint-disable */
 import React from 'react';
-import Header from "./components/header";
-import Footer from "./components/footer";
+import Layout from "./components/layout";
 import Main from "./components/main";
 import About from "./components/about";
 
@@ -13,12 +12,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header />
         <Routes>
           <Route path={ constants.urls['home'] } element={<Main />} /> 
           <Route path={ constants.urls['about'] } element={<About />} /> 
         </Routes>
-        <Footer />
       </div>
     );
   }
