@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaShoppingBasket } from "react-icons/fa";
 
-const constants = require("../static/constants");
+const constants = require("../../static/constants");
 
 export default function header() {
 

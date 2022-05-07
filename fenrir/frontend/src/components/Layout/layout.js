@@ -7,11 +7,11 @@ class layout extends Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <Header />
           {this.props.children}
         <Footer />
-      </div>
+      </React.Fragment>
     );
   }
 }

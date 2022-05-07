@@ -7,7 +7,7 @@ export class product extends Component {
         <img className="img-product" src={"data:image/jpeg; base64, " + this.props.product.picture} alt="" />
         <h4>Цена {this.props.product.price}</h4>
         <h3>{this.props.product.name}</h3>
-        <button className="btn-product btn-info">Узнать больше</button>
+        <button className="btn-product btn-info" onClick={() => this.props.addToBacket(this.props.product.id) }>Узнать больше</button>
       </div>
     )
   }

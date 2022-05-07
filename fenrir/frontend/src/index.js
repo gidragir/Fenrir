@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './static/css/main.css';
 import App from './App';
-import Layout from "./components/layout";
+import Layout from "./components/Layout/layout";
 
 import { BrowserRouter } from 'react-router-dom';
 
@@ -14,6 +14,6 @@ root.render(
       <Layout>
         <App />
       </Layout>
-      </BrowserRouter>
+    </BrowserRouter>
   </React.StrictMode>
 );

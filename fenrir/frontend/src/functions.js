@@ -6,7 +6,8 @@ const API_URL = "http://127.0.0.1:8000/api/"
 class Functions {
 
   sendReq(method) {
-    return axios.get(API_URL + method);
+    let result = axios.get(API_URL + method); 
+    return result;
   }
 
 };
