@@ -9,7 +9,7 @@ export default function catalog() {
   const [loading, setLoading] = useState(true);
   const [products, setProducts] = useState([]);
   const [currentPage, setPage] = useState(1);
-  const [productsLimit] = useState(5);
+  const [productsLimit] = useState(10);
 
   useEffect(() => {
    Functions.sendReq('productsList/').then((res) => {

@@ -2,9 +2,6 @@
 import React, { Component } from 'react';
 
 const Pagination = React.memo(({ productsLimit, total, paginate, currentPage}) => {
-    
-  console.log("Пагинация")
-
   const numbersView = React.useMemo(() => {  
     const pageNumbers = [];
 
